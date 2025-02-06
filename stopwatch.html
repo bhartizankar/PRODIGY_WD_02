@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+
+    <link rel="stylesheet" href="stopwatch.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="watch">
+            <div class="out-cir">
+                <div class="in-cir">
+                    <span class="text hour">0 :</span>
+                    <span class="text min">&nbsp;0 :</span>
+                    <span class="text sec">&nbsp;0 :</span>
+                    <span class="text msec">&nbsp;0</span>
+                </div>
+            </div>
+            <div class="all-buttons">
+                <button class="button reset hidden">Reset</button>
+                <button class="button play">Play</button>
+                <button class="button pause hidden">Pause</button>
+                <button class="button lap hidden">Lap</button>
+            </div>
+        </div>
+        <ul class="laps">
+            <li class="lap-item">
+                <span class="num">#0</span>
+                <span class="time-stamp">0 : 0 : 0 : 0</span>
+            </li>
+        </ul>
+        <button class="lap-clear">Clear All</button>
+    </div>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="windmill.mp4" type="video/mp4">
+        </video>
+    </div>
+    <script src="stopwatch.js"></script>
+    <footer>
+        <p>Designed by <a href="Bharti Zankar">Bharti Zankar</a></p>
+    </footer>
+</body>
+</html>
